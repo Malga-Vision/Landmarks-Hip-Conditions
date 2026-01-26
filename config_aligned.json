@@ -1,0 +1,45 @@
+{
+    "gpu": 0,
+    "seed": 42,
+
+    "experiments_path": "../experiments",
+
+    "model": {
+        "name": "smp_UnetPlusPlus",
+        "encoder": "resnet18",
+        "encoder_weights": "imagenet",
+        "decoder_channels": [256, 128, 64, 32, 16]
+    },
+
+    "training": {
+        "apply": true,
+        "resume": false,
+        "optimizer": "AdamW",
+        "loss_function": "NLL",
+        "scheduler": "exponentiallr",
+        "learning_rate": 1e-4,
+        "epochs": 200,
+        "early_stopping_patience": 15
+    },
+
+    "testing": {
+        "tta": true
+    },
+
+    "dataset": {
+        "name": "aligned_hip_xray",
+        "path": "../data",
+        "partition_path": "../data/partitions/xray_mri_hip_partition.json",
+        "image_size": [512, 512],
+        "image_channels": 1,
+        "sigma": 5,
+        "training_samples": "all"
+    },
+
+    "dataloader": {
+        "batch_size": 4,
+        "grad_accumulation": 1,
+        "num_workers": 16,
+        "pin_memory": true
+    }
+}
