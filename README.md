@@ -305,19 +305,6 @@ The code reports metrics at three hierarchical levels:
 - Positive Predictive Value (PPV), Negative Predictive Value (NPV)
 - Confusion matrix (TP/FP/TN/FN)
 
-## Citation
-
-If you use this code or method in your research, please cite:
-
-```bibtex
-@inproceedings{divia2026automated,
-  title={Automated Landmark Detection for Assessing Hip Conditions: A Cross-Modality Validation of MRI versus X-Ray},
-  author={Di Via, Roberto and Pastore, Vito Paolo and Odone, Francesca and Glyn-Jones, Siˆon and Voiculescu, Irina},
-  booktitle={IEEE International Symposium on Biomedical Imaging (ISBI)},
-  year={2026}
-}
-```
-
 ## Acknowledgments
 
 This research was conducted retrospectively using human subject data from the FAIT study, which received ethical approval. Data were collected at Oxford University as part of a multi-centre randomised controlled trial comparing surgical and non-surgical management of femoroacetabular impingement.
@@ -334,3 +321,19 @@ This project is licensed under the MIT License.
 ## Contact
 
 For correspondence regarding this implementation, please contact: irina@cs.ox.ac.uk
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@inproceedings{divia2026hip,
+  title={Automated Landmark Detection for Assessing Hip Conditions: A Cross-Modality Validation of {MRI} versus {X-ray}},
+  author={Di Via, Roberto and Pastore, Vito Paolo and Odone, Francesca and Glyn-Jones, Si{\^o}n and Voiculescu, Irina},
+  booktitle={2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)},
+  pages={1--4},
+  year={2026},
+  publisher={IEEE},
+  doi={10.1109/ISBI61048.2026.11515938}
+}
+```
